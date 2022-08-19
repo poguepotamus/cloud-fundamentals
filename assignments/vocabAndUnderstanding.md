@@ -19,7 +19,7 @@ Please explain, in high-level terms, what a hypervisor is, how many types there 
 ## 3. Cloud Computing Models
 
 Consider a situation where you want to orchestrate a theatre play about a duck undercover in a flock of geese.
-Please use this resources guide if you're unfamiliar with how to orchestrate a play:
+Please use this resources guide for orchestrating your play:
 
 - Auditorium
 - Stage
