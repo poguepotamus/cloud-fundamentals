@@ -85,7 +85,7 @@ Lets create a PostgreSQL database with the following configureation:
 
 Lets setup our connection in TablePlus.
 
-![Example setup for tableplus](../img/../RDS_connection_example.png)
+![Example setup for tableplus](../img/RDS_connection_example.png)
 
 Click 'test' to make sure our connection is valid, save the connection, then click on the new server on your main menu.
 
