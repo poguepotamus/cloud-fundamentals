@@ -1,3 +1,5 @@
+# Minecraft Server with Lightsail
+
 Lets setup a Lightsail instance called `MC_Server` running "Ubuntu 20.04 LTS".
 
 Lets update our instance using apt
@@ -6,6 +8,8 @@ sudo apt update && sudo apt upgrade -y
 # Kernal update requires a reboot
 sudo reboot
 ```
+
+## Java
 
 Next, lets configure apt to be able to install the most recent version of OpenJDK, as it's the easiest way to get JDK right now.
 ```bash
@@ -20,6 +24,8 @@ which java
 java -version
 # Should say `openjdk version "17.0.*" ...`
 ```
+
+## Minecraft Server
 
 Alright, java is installed, lets grab out minecraft server
 ```bash
@@ -40,11 +46,16 @@ Wonderful! Now that we've finished that, we've just gotta launch the server agai
 java -Xmx1024M -Xms1024M -jar minecraft_server.1.19.2.jar nogui
 ```
 
+## Firewall
+
 While that's waiting, we're gonna open some firewall rules so we can connect to our server.
 
 Go to your management page for your Lightsail instance, go to your Networking tab. Add rules to allow TCP and UDP traffic to connect through port 25565, Minecraft's default communication port.
 
 ![Default firewall configuration for a Minecraft server](../img/MCS_firewall_rules.png)
+
+
+## Connecting
 
 Once you're done with this and your server is finished loading, copy the public IP from the Networking page of your Instance console and direct connect to your server in the Minecraft Client!
 
