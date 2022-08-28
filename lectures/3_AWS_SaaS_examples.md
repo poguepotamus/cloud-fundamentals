@@ -1,59 +1,15 @@
 # AWS SaaS Examples
 
-We'll talk about 3 different services today, EC2, S3, and RDS.
-
-[EC2](#ec2) is compute engines. Headless servers made for processing data, and don't provide the same networking tools that some other services provide. This is made for data processing and has plenty of different options to different data sets.
+We'll talk about 2 AWS (Amazon Web Services) services today; S3 and RDS.
 
 [S3](#s3) is a storage service, similar to dropbox, onedrive, and seafile, but it's catered towards commercial use. This can be used in marketing graphics/material for anything that needs to be stored on a server, and aws can configure this to live on a CDN for some extra cash.
 
 [RDS](#rds) (Relational Database Service) is a database solution that is fully hosted and managed by aws. There isn't much more to it.
 
+## Prerequisites
 
-## EC2
-
-Start EC2 free instance with default settings.
-
-Update system and reboot it
-```
-sudo apt update && sudo apt upgrade -y
-sudo reboot
-```
-
-Wait for system to reboot, then install depenedencies
-```
-sudo apt install curl python3 git
-```
-
-Lets download some simple [python console games](https://github.com/topics/console-game?l=python) from github.
-
-
-### Number Guessing Game
-
-Install number guessing game by curling this raw github file.
-
-```bash
-curl https://raw.githubusercontent.com/Akshay-Vs/Number-Guessing-game/main/number_guessing_game.py -o number_guessing_game.py
-```
-
-Launh the game using python
-```bash
-python number_guessing_game.py
-```
-
-### Minsweeper console game
-
-Start by cloning the game's full files.
-
-```bash
-git clone https://github.com/jarseneault/minesweeper
-```
-
-Run the code by executing their major file while in the program directory.
-
-```bash
-cd minesweeper
-python minesweeper.py
-```
+- Sign up for AWS using your school or personal email. If student credits are avilable, apply them to your account.
+- Download [TablePlus](https://tableplus.com/). This specific application is not required, but an alternative appliation will need to restore a PostgreSQL backup.
 
 ## S3
 
