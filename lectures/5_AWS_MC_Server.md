@@ -2,6 +2,8 @@
 
 Lets setup a Lightsail instance called `MC_Server` running "Ubuntu 20.04 LTS".
 
+Make sure to get an instance with at-least 1GB of ram. During the writing of this guide, the $10 instance with 2GB is still in the free tier, that would be your best choice.
+
 Lets update our instance using apt
 ```bash
 sudo apt update && sudo apt upgrade -y
