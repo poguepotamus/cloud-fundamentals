@@ -32,7 +32,11 @@ At this point, you should be able to "Review + create" and start your instance.
 
 Select the terminal enumator in the top bar. When prompted for which shell to use, select "bash". Go though the rest of the steps with default settings.
 
+![Example for opening bash terminal](../img/AZR_bash_guide.png)
+
 While storage for your terminal is being created, find the public IP for your new Ubuntu instance by going to the network tab.
+
+![Example for finding your instance public IP](../img/AZR_public_ip.png)
 
 Once you have access to your terminal, you'll use the command:
 
